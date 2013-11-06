@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1.
+        To Do's list
+    ul
+        each todo in todos
+            p
+               div #{todo._id}
+               div #{todo.content}
+               div #{todo.priority}
+               
